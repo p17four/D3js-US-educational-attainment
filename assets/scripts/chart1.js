@@ -1,4 +1,3 @@
-var Accio_gitrepo="Github Repo: https://github.com/colorfest/d3js";
 var data = [{
   "year": "2009",
   "rank": 92
