@@ -8,11 +8,11 @@ var radius = ((Math.min((width - margin), (height - margin)) / 2) * 0.9  ),
 		// innerRadius = 0;
 
 var data = [
-      {number: "Week 1", rate: 200},
-      {number: "Week 2", rate: 150},
-      {number: "Week 3", rate: 200},
-      {number: "Week 4", rate: 300},
-			{number: "Week 5", rate: 200}
+      {number: "2017", rate: 200},
+      {number: "2016", rate: 150},
+      {number: "2015", rate: 200},
+      {number: "2014", rate: 300},
+      {number: "2013", rate: 200}
     ];
 
 var color = d3.scale.ordinal().range([
