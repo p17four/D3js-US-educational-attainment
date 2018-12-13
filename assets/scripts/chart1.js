@@ -1,29 +1,29 @@
 var data = [{
-  "name": "2009",
+  "year": "2009",
   "rank": 92,45
 }, {
-  "name": "2010",
+  "year": "2010",
   "rank": 65,5
 }, {
-  "name": "2011",
+  "year": "2011",
   "rank": 85,25
 }, {
-  "name": "2012",
+  "year": "2012",
   "rank": 101,56
 }, {
-  "name": "2013",
+  "year": "2013",
   "rank": 104,6
 }, {
-  "name": "2014",
+  "year": "2014",
   "rank": 117,63
 }, {
-  "name": "2015",
+  "year": "2015",
   "rank": 97,2
 }, {
-  "name": "2016",
+  "year": "2016",
   "rank": 92,14
 }, {
-  "name": "2017",
+  "year": "2017",
   "rank": 90,25
 }];
 
@@ -106,7 +106,7 @@ svg.selectAll("bar")
 
   tooltip.transition().duration(200)
     .style("opacity", 0.9);
-  tooltip.select("div").html("Name: <strong>" + d.name + "</strong><br/>Rank: <strong>" + d.rank + "</strong>")
+  tooltip.select("div").html("year: <strong>" + d.name + "</strong><br/>Rank: <strong>" + d.rank + "</strong>")
     .style("position", "fixed")
     .style("left", (d3.event.pageX) + "px")
     .style("top", (d3.event.pageY - 28) + "px");
