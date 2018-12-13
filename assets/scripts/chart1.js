@@ -106,7 +106,7 @@ svg.selectAll("bar")
 
   tooltip.transition().duration(200)
     .style("opacity", 0.9);
-  tooltip.select("div").html("year: <strong>" + d.name + "</strong><br/>Rank: <strong>" + d.rank + "</strong>")
+  tooltip.select("div").html("year: <strong>" + d.year + "</strong><br/>Rank: <strong>" + d.rank + "</strong>")
     .style("position", "fixed")
     .style("left", (d3.event.pageX) + "px")
     .style("top", (d3.event.pageY - 28) + "px");
