@@ -1,31 +1,33 @@
+var Accio_gitrepo="Github Repo: https://github.com/colorfest/d3js";
 var data = [{
   "year": "2009",
-  "rank": 92,45
+  "rank": 92
 }, {
   "year": "2010",
-  "rank": 65,5
+  "rank": 65,
 }, {
   "year": "2011",
-  "rank": 85,25
+  "rank": 85,
 }, {
   "year": "2012",
-  "rank": 101,56
+  "rank": 101,
 }, {
   "year": "2013",
-  "rank": 104,6
+  "rank": 104,
 }, {
   "year": "2014",
-  "rank": 117,63
+  "rank": 117,
 }, {
   "year": "2015",
-  "rank": 97,2
+  "rank": 97,
 }, {
   "year": "2016",
-  "rank": 92,14
+  "rank": 92,
 }, {
   "year": "2017",
-  "rank": 90,25
+  "rank": 90,
 }];
+
 
 var margin = {
     top: 20,
@@ -51,7 +53,7 @@ var svg = d3.select("#barGraph")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 x.domain(data.map(function(d) {
-  return d.name;
+  return d.year;
 }));
 
 y.domain([0, d3.max(data, function(d) {
@@ -77,8 +79,7 @@ svg.append("text")
   .attr("transform", "rotate(-90)")
   .attr("y", 5)
   .attr("dy", "0.8em")
-  .attr("text-anchor", "end")
-  .text("Member Rank");
+  .attr("text-anchor", "end");
 
 svg.selectAll("bar")
   .data(data)
@@ -86,7 +87,7 @@ svg.selectAll("bar")
   .append("rect")
   .style("fill", "orange")
   .attr("x", function(d) {
-    return x(d.name);
+    return x(d.year);
   })
   .attr("width", x.bandwidth())
   .attr("y", function(d) {
