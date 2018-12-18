@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="sound-mouseover.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 </head>
 <body style="height:1500px">
 
@@ -29,21 +31,23 @@
 <div class="container" style="margin-top:50px">
 
 <p><br><br><br></p>
+ <h1 class="title" onmouseover="responsiveVoice.speak('3 ΔΙΑΦΟΡΕΤΙΚΑ ΔΙΑΓΡΑΜΜΑΤΑ');" onmouseleave="responsiveVoice.cancel();">3 ΔΙΑΦΟΡΕΤΙΚΑ ΔΙΑΓΡΑΜΜΑΤΑ</h1>
   <h3>3 ΔΙΑΦΟΡΕΤΙΚΑ ΔΙΑΓΡΑΜΜΑΤΑ </h3>
 
 <p><br><br><br></p>
+ <h1 class="subtitle" onmouseover="responsiveVoice.speak('Αιτήσεις διπλωμάτων ευρεσιτεχνίας στο Ευρωπαϊκό Γραφείο Διπλωμάτων για την Ελλάδα τα έτη 2009-2017');" onmouseleave="responsiveVoice.cancel();">Αιτήσεις διπλωμάτων ευρεσιτεχνίας στο Ευρωπαϊκό Γραφείο Διπλωμάτων για την Ελλάδα τα έτη 2009-2017</h1>
  
- <h2><font color="black">Αιτήσεις διπλωμάτων ευρεσιτεχνίας στο Ευρωπαϊκό Γραφείο Διπλωμάτων για την Ελλάδα τα έτη 2009-2017</font></h2>
  
  <p><br><br><br></p>
   
-<div class="graph" id="barGraph"></div>
+<div class="Graph 1" id="barGraph"></div>
  <script src="https://d3js.org/d3.v4.js"></script>  
  <script  src="assets/scripts/chart1.js"></script>
  
  <p><br><br><br></p>
-
- <h2><font color="black">Εξαγωγές υψηλής τεχνολογίας 2013-2017</font></h2>
+ </div> 
+	<div id="Graph 2">
+<h2 class="subtitle" onmouseover="responsiveVoice.speak('Εξαγωγές υψηλής τεχνολογίας 2013-2017');" onmouseleave="responsiveVoice.cancel();">Εξαγωγές υψηλής τεχνολογίας 2013-2017</h2>
  
  
  <p><br><br><br></p>
@@ -74,13 +78,13 @@
  <script  src="assets/scripts/chart2.js"></script>
  
  <p><br><br><br></p>
- 
- 
- <h2><font color="black">Άτομα - συχνότητα χρήσης διαδικτύου</font></h2>
+ </div> 
+	<div id="Graph 3">
+ <h2 class="subtitle" onmouseover="responsiveVoice.speak('Άτομα - συχνότητα χρήσης διαδικτύου');" onmouseleave="responsiveVoice.cancel();">Άτομα - συχνότητα χρήσης διαδικτύου</h2>
  <div class="widget">
-    <div class="header">Άτομα - συχνότητα χρήσης διαδικτύου</div>
+ <h2 class="subtitle" onmouseover="responsiveVoice.speak('Άτομα - συχνότητα χρήσης διαδικτύου');" onmouseleave="responsiveVoice.cancel();">Άτομα - συχνότητα χρήσης διαδικτύου</h2>
   
-    <div id="chart" class="chart-container"></div>
+    <div id="chart" class="chart-container" align="center"></div>
 </div>
  <script  src="assets/scripts/chart3.js"></script>
  
