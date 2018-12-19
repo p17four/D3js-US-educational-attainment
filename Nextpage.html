@@ -12,7 +12,14 @@
  <script type="text/javascript" src="sound-mouseover.js"></script>
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 </head>
-<body style="height:1500px">
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(window).on('resize', function(){
+           var win = $(this); 
+           if (win.width() > 800) 
+        });
+	</script>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
